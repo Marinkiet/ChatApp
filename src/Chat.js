@@ -41,16 +41,15 @@ function Chat() {
       </div>
         
           <div className='chat_body'>
-            <p className='chat_Message'> 
+            <p className='chat_Message chat-receiver'> 
             <span className='chat_name'>
                 Chagt bhfbjhf
-                <span className='time_stamp'>
-                10:00
-              </span>
               </span>
               
               hello there world
-             
+              <span className='time_stamp'>
+                10:05pm
+              </span>
             </p>
             <p className='chat_Message'>
               hello there galaxy
