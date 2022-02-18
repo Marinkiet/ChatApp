@@ -59,7 +59,7 @@ function Sidebar() {
       </div>
       <div className='sidebar_chats'>
         <SidebarChat addNewChat />
-        {Rooms.map(room => (
+        {Rooms.map((room) => (
           <SidebarChat
             key={room.id}
             id={room.id}

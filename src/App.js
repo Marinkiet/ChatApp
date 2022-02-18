@@ -1,15 +1,20 @@
 import './App.css';
 import Sidebar from './Sidebar';
 import Chat from './Chat'
-import { Router } from 'react-router';
+import { Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
       <h1>Chats</h1>
       <div className="app_body">
-
         <Sidebar />
-        <Chat />
+        <Routes>
+          <Route path="/rooms/:roomId" element={<Chat />}></Route>
+          <Route path="/" element={<Chat />}></Route>
+
+        </Routes>
+
 
       </div>
     </div>
@@ -18,5 +23,5 @@ function App() {
 
 export default App;
 
+//<Route path="/" element={[<Sidebar />, <Chat />]}></Route>
 
-//timestamp : 2:17:47
